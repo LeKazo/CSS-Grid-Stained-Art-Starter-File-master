@@ -9,8 +9,10 @@
 }
 .container{
     display: grid;
-    height: 700px;
-    width: 1100px;
+    height: 61.5vmax;
+    width: 100vmax;
+    max-width: 161.5vmin;
+    max-height: 100vh;
     border: solid 5px black;
     margin: auto;
     background-size: cover;
@@ -23,6 +25,52 @@
           "p p r r . . q t t t t";
 }
 
+@media (max-width: 900px) {
+    .container{
+        display: grid;
+        height: 700px;
+        width: 1100px;
+        border: solid 5px black;
+        margin: auto;
+        background-size: cover;
+        grid:   "a a b b b c c d"
+                "l f f f f g g d"
+                "l f f f f g g d "
+                "m f f f f i i d "
+                "m f f f f j j d "
+                "m k k o o e e d "
+                "n k k h h p p q "
+                "n r r s s p p q "
+                "n r r t t t t q "
+    }
+}
+@media (max-width: 600px) {
+    .container{
+        display: grid;
+        height: 700px;
+        width: 1100px;
+        border: solid 5px black;
+        margin: auto;
+        background-size: cover;
+        grid: "a a b b b"
+              "c c d e h"
+              "g g d e h"
+              "g g d m h"
+              "i . d m ."
+              "i . d k k"
+              "l l d k k"
+              "f f f f n"
+              "f f f f n"
+              "f f f f n"
+              "f f f f q"
+              "e e o o q"
+              "j j o o q"
+              "p p r r q"
+              "p p r r ."
+              "s s . . ."
+              "t t t t ."
+    }
+    }
 .grid-item{
     border: black 5px solid;
     background-size: cover;
